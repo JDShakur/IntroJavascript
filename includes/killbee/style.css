@@ -1,0 +1,112 @@
+html {
+    cursor: url('image/alvo.png') 30 30, auto;
+}
+
+body {
+    background-image: url("https://diamondlobby.com/wp-content/uploads/2022/04/beehive.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mosca1 {
+    width: 80px;
+    height: 80px;
+}
+
+.mosca2 {
+    width: 90px;
+    height: 90px;
+}
+
+.mosca3 {
+    width: 120px;
+    height: 120px;
+}
+
+.ladoA {
+    transform: scaleX(1);
+}
+
+.ladoB {
+    transform: scaleX(-1);
+}
+
+.painel{
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    bottom: 0px;
+    border-top: solid 1px black;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.vidas {
+    float: left;
+}
+
+.cronometro {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#container {
+    width: 700px;
+    margin: 0 auto;
+    border-radius: 20%;
+}
+
+#logo_perdeu {
+   width: 500px;
+   margin: 0 auto;
+   opacity: 1.0;
+}
+
+#bar {
+    width: 50px;
+    margin: 0 auto;
+}
+
+button {
+    margin-top: 5px;
+    border-radius: 15%;
+    color: #f1f1f1;
+    padding: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+ 
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#formx {
+    font-size: 30px;
+    margin-left: -100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

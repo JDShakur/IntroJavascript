@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo Javascript</title>
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- Js script Bootstrap -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+    <!--Bootstrap icon CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Custom Css-->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @font-face {
+            font-family: "Old";
+            src: url("Olondona.otf") format('opentype');
+
+        }
+
+        .OldLon {
+            font-family: "Old";
+            font-size: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow" id="mainNavbar">
+            <div class="container">
+                <img src="eu.png" class="img-fluid rounded-5 rounded-start" alt="Icone">
+                <p class="OldLon display-5 d-none d-sm-block">JDShakur</p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="bi bi-list text-white fs-1"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown "></div>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Intro</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="creditos.html">Créditos</a>
+                        </li>
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Estudos/Projetos
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="funcao.html">Funções</a></li>
+                                    <li><a class="dropdown-item" href="Loops.html">Loops</a></li>
+                                    <li><a class="dropdown-item" href="/pokemon/index.html">Jogo Pokemon</a></li>
+                                    <li><a class="dropdown-item" href="/killbee/index.html">Jogo KillBee</a></li>
+                                    <li><a class="dropdown-item" href="/BoisAdventure/index.html">Jogo BoysAdventure</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
+
+            </div>
+
+
+
+    </header>
+
+
+    <article>
+        <div class="container bg-black  " id="hero">
+            <div class="row ">
+                <h1 class="text-center display-4 mt-1 py-4">Laços de Repetição</h1>
+                <hr class="border border-primary border-2 opacity-25">
+            </div>
+            <div class="row">
+                <p>
+                    Quando necessitamos executar uma tarefa inúmeras vezes utilizamos os sempre úteis laços de
+                    repetição, no JavaScript há tem formas de fazer isso acontecer, sendo elas:
+                    <strong>"For"</strong>,<strong>"While"</strong> e <strong>"Do while"</strong>, essas são as
+                    principais ferramentas de para repetição, não utilizado somente de js mas também de diversas
+                    linguagens.
+                </p>
+                <div class="row ">
+                    <h1 class="text-center display-6 mt-1 py-4">Loop 'For'</h1>
+                    <hr class="border border-dark-subtle border-2 opacity-25">
+                </div>
+                <p>
+                    Aqui teremos um exemplo, começando pela sintaxe do Loop <strong>For</strong>
+                </p>
+                <pre>
+                    <code>
+                        for (inicialização; condição; expressão de iteração) {
+                            // Código a ser repetido
+                          }
+                          //de outra maneira veremos:
+                        for(let i = 0;i <= 10;i++){
+                            código
+                        } 
+                    </code>
+                </pre>
+                <p>
+                    Nisso vemos que na estrutura do For as números de iterações devem ser impostas antecipadamente, isso dentro da
+                    colchetes da função.
+                    Ela também pode ser dividida em três partes, sendo elas: A Inicialização (representado como o let i
+                    = 0), a vondição (nesse caso i <= 10) e a expressão da interação(já que é uma variável crescente
+                        i++); </p>
+
+                        <div class="row ">
+                            <h1 class="text-center display-6 mt-1 py-4">Loop 'while'</h1>
+                            <hr class="border border-dark-subtle border-2 opacity-25">
+                        </div>
+                        <p>
+                            Outra loop de repetição (e meu favorito) é o loop <strong>while</strong>. Extremamente fácil de se usar, e preferivel em muitoscasos no qual você tem a variável em uma condição e repetição já estabelecida, fazendo que a condiçãode verificação seja feita antes de cada interação, caso não atenda mais oque o loop exige o loop é encerrado retornando algo. 
+                        </p>
+                        <p>Aqui vaia  sintaxe do <strong>while</strong>:</p>
+                        <pre>
+                            <code>
+                                while(condição){
+                                    código a ser repetido
+                                }
+                                // exemplo detalhado
+                                let i = 0;
+                                while(i <=10){
+                                    console.log(i);// Imprime os números de 0 a 10.
+                                    i++
+                                }
+                            </code>
+                        </pre>
+                        <div class="row ">
+                            <h1 class="text-center display-6 mt-1 py-4">Loop 'Do while'</h1>
+                            <hr class="border border-dark-subtle border-2 opacity-25">
+                        </div>
+                        <p>
+                            Apesar do nome ser parecido, o loop <strong>Do While</strong> funciona de uma forma diferente do <strong>While</strong>,
+                            Onde temos a condição sendo verificada após o código, garantindo que o código 'rode' pelo menos 1 vez antes de atender as condições.
+                        </p>
+                        <p>
+                            Vamos a sintaxe e para um exemplo de código:
+                        </p>
+                        <pre>
+                            <code>
+                                //sintaxe
+                                do {
+                                    // Código a ser repetido
+                                  } while (condição);
+                                  //exemplo
+                                  let i = 0;
+                                    do {
+                                    console.log(i); // Imprime os números de 0 a 4
+                                    i++;
+                                    } while (i < 5);
+                            </code>
+                        </pre>
+                        <p>
+                            Para facilitar a visão de como funciona este loop, podemos imaginar um caixa eletrônico, que executa o layout de funções('while' ou seja enquanto ele não decide), antes da decisão do usuário de sacar, depositar, tirar extrato etc('do' após ser selecionado).
+                        </p>
+
+                        <!-- Ponto final -->
+            </div>
+        </div>
+
+    </article>
+
+    <footer>
+
+        <div class="row sticky-bottom  justify-content-md-center">
+
+            <div class="container-fluid justify-content">
+                <p class="mt-3 fw-light">Juan Felipe Pacheco de Freitas R.A:2650832223024</p>
+                <br>
+                <p><small class="mt-2 fw-light">Copyright &copy todos os direitos reservados</small> </p>
+            </div>
+            </nav>
+        </div>
+        </div>
+    </footer>
+
+</body>

@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Telas */
+.palco{
+    width: 80%; 
+    height: 500px;
+    border-radius: 10px;
+    border: solid black;
+    border-bottom: 35px solid rgb(1, 20, 1);
+    margin: 0 auto; 
+    position: relative; 
+    overflow: hidden;
+    background-image: url("https://asiasociety.org/sites/default/files/styles/400x286/public/1/120607_china_64_1_0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -20%;
+    background-position-y:100%;
+}
+
+.cano{
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    right: 0;
+    left: 120;
+    animation: cano-animation 2s infinite linear;
+}
+
+@keyframes cano-animation{
+    from{
+        right: -300px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+.ork {
+    width: 350px;
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes ork-animation {
+    from{ bottom: 150px;
+    }
+
+    to { bottom: 0;
+    }
+}
+
+@keyframes ork-animation {
+    0% {bottom: 0;}
+    35% {bottom: 180px;}
+    50% {bottom: 180px;}
+    65% {bottom: 180px;}
+    100% {bottom: 0;}
+}
+
+.pulo {
+    animation: ork-animation 500ms ease-out;
+}
+
+
+.nuvem {
+    position: absolute;
+    width: 900px;
+    animation: nuvem-animation 60s  linear;
+}
+
+@keyframes nuvem-animation {
+    from {
+        right: -550px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+.vitoria {
+    position: absolute;
+    width: 100%;
+    right: 1500px;
+    z-index: 9999;
+}
+
+
+.score {
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+} 
+
+.tip {
+    font-weight: normal;
+    font-size: 0.5em;
+}
+

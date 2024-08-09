@@ -1,0 +1,59 @@
+
+.palco{
+  width: 800px; 
+  height: 500px;
+  border-radius: 10px;
+  border: solid black;
+  margin: 0 auto; 
+  position: relative;
+  overflow: hidden;
+  background-image: url('https://images3.alphacoders.com/677/677583.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#sprite {
+  height: 300px;
+  width: 300px;
+}
+
+@font-face {
+  font-family: poke;
+  src: url(Pokemon\ Solid.ttf);
+}
+
+#pokemon-name {
+  font-family: poke;
+  color: #375da9;
+  -webkit-text-stroke: 3px #ffcc00;
+  font-size: 10vh;
+}
+
+#streak {
+  font-size: 4vh;
+  font-weight: strong;
+  font-family:poke;
+}
+
+#guess {
+  width: 50%;
+  height: 35px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-flow:row;
+
+  text-align: center;
+}
+
+.column {
+  text-align: center;
+}
+
+
